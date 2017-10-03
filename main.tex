@@ -1,0 +1,111 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75,margin=1in]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\pagenumbering{gobble}
+% personal data
+\name{Cody}{Holliday}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+\phone[mobile]{+1~(541)~951~4242}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{cody@codysse.us}                               % optional, remove / comment the line if not wanted
+\homepage{codysse.us}                         % optional, remove / comment the line if not wanted
+\extrainfo{Recent Graduate Seeking Full Time Job}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{}                                 % optional, remove / comment the line if not wanted
+
+%\RenewDocumentCommand{\section}{sm}{\par\addvspace{.5ex}}% <==================== change 2.5ex for your needs
+  %            ^^^^^^^^^^^^^^  <========= change value 1ex for your needs
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\vspace{-2.5em}
+
+\section{Education}
+\cventry{9/2014--6/2018}{Computer Science}{Oregon State University}{Corvallis}{\textit{Undergrad GPA: \textbf{3.52}}}{Studied Computer Science with an interest in security and Linux systems.}  % arguments 3 to 6 can be left empty
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+\subsection{Relevant Coursework}
+\cvitem{}{Networking, OSI\&II, Analysis of Algorithms, Data Structures, Senior Design}
+
+\section{Work Experience}
+\cventry{June 2016--June 2018}{OSU Open Source Lab}{Student Systems Engineer}{Corvallis}{}{Gained knowledge of system administration tools and techniques by working with coworkers and mentors to solve problems for clients hosting on our servers. Projects ranged from building components of a testing pipeline, to writing tools to migrate data from Open Source project management tools.}%
+
+\cvitem{}{Frequently Used Tools at the Open Source Lab}%
+\begin{cvcolumns}
+  \cvcolumn{}{\begin{itemize}\item Ruby\item Git\end{itemize}}
+  \cvcolumn{}{\begin{itemize}\item Chef\item Chefspec\end{itemize}}
+  \cvcolumn{}{\begin{itemize}\item Bash\item Jenkins\end{itemize}}
+\end{cvcolumns}
+
+\cventry{April 2018--June 2018}{Oregon State University}{Teacher's Assistant for CS312 System Administration}{Corvallis}{}{Graded Student work and lead labs. Contributed to the quality of new coursework. }
+
+\cventry{September 2015--June 2016}{Oregon State University}{Teacher's Assistant for CS161 \& CS162}{Corvallis}{}{Graded student work and helped students understand key Computer Science concepts.\newline{}The programming language for these courses is C++.}
+
+\section{Senior Design Group Project}
+\cvitem{brew.ai}{Brew.ai is an automated mead brewing machine. It learns what flavors you like in your mead over the course of multiple brews. The device is controlled through an Android app that connects to it via Bluetooth. I wrote the Android app as well as integrated the Bluetooth connection to enable communication between the app and the brewing process on the Raspberry Pi controller.}
+
+\section{Other Skills}
+\begin{cvcolumns}
+  \cvcolumn{}{\begin{itemize}\item C/C++\item Python\end{itemize}}
+  \cvcolumn{}{\begin{itemize}\item Java\item MySQL\end{itemize}}
+  \cvcolumn{}{\begin{itemize}\item Android Development\item Group Software Development\end{itemize}}
+\end{cvcolumns}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+
+\section{Activities}
+\cvitem{Licensed HAM Radio Operator}{Study electrical engineering fundamentals and communicate with other operators around the country. Currently Technician level.}
+%\cvitem{Vice President OSU Security Club}{Plan weekly talks on different Computer Security Topics to train students for a CTF.}
+%\cvitem{Associated Students of Information Technology}{I am one of the founding members of the IT club on OSU campus. We discuss a different IT topic each week ranging from basic networking to designing your personal home network.}
+%\cvitem{KBVR Radio DJ}{Fall 2014 - Present: Host a radio show once a week.}
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+\end{document}
