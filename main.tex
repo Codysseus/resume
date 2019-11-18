@@ -61,34 +61,31 @@
 \vspace{-3em}
 
 \section{Education}
-\cventry{9/2019--6/2021(exp)}{Masters Computer Science}{Oregon State University}{Corvallis}{}{Research on improving SGX+ORAM performance and fuzzing Real Time Operating Systems.}
-\cventry{9/2014--6/2018}{Undergraduate Computer Science}{Oregon State University}{Corvallis}{\textit{Undergrad GPA: \textbf{3.52}}}{Studied Computer Science with an interest in security and Linux systems.}  % arguments 3 to 6 can be left empty
+\cventry{9/2019--6/2021(exp)}{M.S. Computer Science}{Oregon State University}{Corvallis, OR}{}{Research on improving SGX+ORAM performance to create an Oblivious Searchable Database and fuzzing Real Time Operating Systems.}
+\cventry{9/2014--6/2018}{B.S. Computer Science}{Oregon State University}{Corvallis, OR}{\textit{cum laude (GPA: \textbf{3.52})}}{Studied Computer Science with an interest in security and Operating Systems.}  % arguments 3 to 6 can be left empty
 %\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
 \subsection{Relevant Coursework}
-\cvitem{}{Networking, OSI\&II, Analysis of Algorithms, Cyber Attacks and Defense, Senior Design}
+\cvitem{}{Systems Security, OSI\&II, Analysis of Algorithms, Cyber Attacks and Defense, Senior Design}
 
 \section{Research Projects}
-\subsection{\textbf{SGX + ORAM}}
-We are building on existing works that use CircuitORAM within SGX Enclaves and improving performance to be usable as a web server.
+\subsection{\textbf{Oblivious Searchable Database}}
+We build on existing designs combining Circuit ORAM with Intel SGX, and improve performance by optimizing key aspects of the implementation to achieve the throughput
+needed to host a usable searchable database (\textasciitilde 20000 requests/second).
+
 \subsection{\textbf{Fuzzing + Symbolic Execution}}
-We are doing research that combines Symbolic execution with Fuzzing to reduce time spent on simple failure conditions in functions and improve bug finding.
-The research specifically focuses on fuzzing Real Time Operating Systems to ensure isolation between computer systems.
+We are doing research that combines Symbolic execution with Fuzzing to reduce time spent on simple failure conditions in System Calls and to improve bug discovery.
+The research specifically focuses on fuzzing Real Time Operating Systems to ensure isolation between different modules on a board, such as the motherboard
+in a car.
 
 \section{Work Experience}
 \cventry{9/2018--6/2019}{Oregon State University}{Faculty Research Assistant}{Remote}{}{Researching automated testing of Real Time Operating Systems using Open Source Fuzzing and Symbolic Execution software.}
-\cventry{6/2016--6/2018}{OSU Open Source Lab}{Student Systems Engineer}{Corvallis}{}{Gained knowledge of system administration tools and techniques by working with coworkers and mentors to solve problems for clients hosting on our servers. Projects ranged from building components of a testing pipeline, to writing tools to migrate data from Open Source project management tools.}%
+\cventry{6/2016--6/2018}{OSU Open Source Lab}{Student Systems Engineer}{Corvallis, OR}{}{Gained knowledge of system administration tools and techniques by working with coworkers and mentors to solve problems for clients hosting on our servers. Projects ranged from building components of a testing pipeline to writing tools to migrate data from Open Source project management tools.}%
 
-\cvitem{}{\textbf{Frequently Used Tools at the Open Source Lab}}%
-\begin{cvcolumns}
-  \cvcolumn{}{\begin{itemize}\item Ruby\item Git\end{itemize}}
-  \cvcolumn{}{\begin{itemize}\item Chef\item Chefspec\end{itemize}}
-  \cvcolumn{}{\begin{itemize}\item Bash\item Jenkins\end{itemize}}
-\end{cvcolumns}
+\cventry{1st and 4th year}{Oregon State University}{Teacher's Assistant for Intro Computer Science I \& II,  System Administration}{Corvallis, OR}{}{Graded student work and led labs. Helped students understand key Computer Science concepts in the Intro series. Guided students in performing System Administration tasks. Evaluated and provided feedback on new coursework. }
 
-\cventry{4/2018--6/2018}{Oregon State University}{Teacher's Assistant for CS312 System Administration}{Corvallis}{}{Graded Student work and lead labs. Contributed to the quality of new coursework. }
-
-\cventry{9/2015--6/2016}{Oregon State University}{Teacher's Assistant for CS161 \& CS162}{Corvallis}{}{Graded student work and helped students understand key Computer Science concepts.\newline{}The programming language for these courses is C++.}
-
+\section{Awards}
+\cventry{Spring 2018}{1st Regionally, 4th Nationally}{Cyber Defense Competition}{Pacific Northwest National Labs}{}{Defended simulated ICS infrastructure from Attackers. Responsible for auditing existing Linux servers and configuring NTP.}
+\cventry{Fall 2019}{1st Regionally, 4th Nationally}{Cyber Force Competition}{Pacific Northwest National Labs}{}{Defended a simulated High Performance Computing cluster from Attackers. Responsible for auditing, setting up Email stack, configuring NTP and DNS.}
 %% \section{Senior Design Group Project}
 %% \cvitem{brew.ai}{Brew.ai is an automated mead brewing machine. It learns what flavors you like in your mead over the course of multiple brews. The device is controlled through an Android app that connects to it via Bluetooth. I wrote the Android app as well as integrated the Bluetooth connection to enable communication between the app and the brewing process on the Raspberry Pi controller.}
 
@@ -124,5 +121,5 @@ The research specifically focuses on fuzzing Real Time Operating Systems to ensu
 %\nocitemisc{misc1,misc2,misc3}
 %\bibliographystylemisc{plain}
 %\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
-
+\thispagestyle{empty} 
 \end{document}
